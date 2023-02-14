@@ -16,6 +16,8 @@ from nltk.chunk import conlltags2tree, tree2conlltags
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
 
+COLOR_FILEPATH = 'colors.txt'
+
 def get_colors():
 
     with open(COLOR_FILEPATH) as f:
