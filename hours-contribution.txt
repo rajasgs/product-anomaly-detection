@@ -1,0 +1,12 @@
+
+
+-------------------------------
+Day 1: Feb 14, 2022 - Tuesday
+-------------------------------
+NLTK        - 1 hour
+HuggingFace - 2 hours
+Spacy       - 1 hour
+Python      - 2 hours
+
+
+

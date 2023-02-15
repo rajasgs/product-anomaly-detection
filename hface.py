@@ -5,6 +5,9 @@ Created on
 
 source:
 
+https://stackoverflow.com/questions/62791942/how-do-i-iterate-over-pytorch-2d-tensors
+
+https://pytorch.org/docs/stable/generated/torch.argmax.html
 '''
 
 # importing the required libraries:
@@ -52,9 +55,16 @@ text = 'The walls are painted yellow, and the curtains are green. Then it turned
 encoded_text = tokenizer.encode(text, add_special_tokens=True)
 outputs = model(torch.LongTensor([encoded_text]))
 
-print(type(outputs.logits))
+# print(type(outputs.logits))
 
-# predicted_label = torch.argmax(outputs.logits).item()
+# for i, x in enumerate(outputs.logits):
+#     print(x)
+
+predicted_label = torch.argmax(outputs.logits).item()
+print(f'predicted_label : {predicted_label}')
+
+print(f'color_labels : {color_labels}')
+
 # predicted_color = colors[predicted_label]['name']
 # print(predicted_color)
 
